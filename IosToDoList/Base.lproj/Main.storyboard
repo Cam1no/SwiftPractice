@@ -35,7 +35,7 @@
                     <navigationItem key="navigationItem" title="ToDoList" id="3Va-ap-OT4">
                         <barButtonItem key="rightBarButtonItem" title="追加" id="e80-hh-pn9">
                             <connections>
-                                <segue destination="VVt-bR-Gu3" kind="presentation" id="VTK-b1-fJq"/>
+                                <segue destination="VVt-bR-Gu3" kind="push" id="YZq-AA-HGt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -74,11 +74,17 @@
                                 <rect key="frame" x="164" y="229" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="追加！"/>
+                                <connections>
+                                    <action selector="add:" destination="VVt-bR-Gu3" eventType="touchUpInside" id="amx-Mo-74s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Si5-ft-Hvb"/>
+                    <connections>
+                        <outlet property="textField" destination="G9N-5q-5cy" id="3U8-1K-dJl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qec-Jr-qkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,27 +9,40 @@
 import UIKit
 
 class AddViewController: UIViewController {
+    
+    var array = [String]()
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func add(_ sender: UIButton) {
+        
+        
+        // アプリ内にあるならarrayに追加
+        if UserDefaults.standard.object(forKey: "array") != nil {
+            array = UserDefaults.standard.object(forKey: "array") as! [String]
+        }
+        
+        
+        array.append(textField.text!)
+        
+        // arrayをアプリ内に保存
+        UserDefaults.standard.set(array, forKey: "array")
+        self.navigationController?.popViewController(animated: true)
+        
+        
+        
     }
-    */
 
 }

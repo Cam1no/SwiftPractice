@@ -35,7 +35,7 @@
                     <navigationItem key="navigationItem" title="ToDoList" id="3Va-ap-OT4">
                         <barButtonItem key="rightBarButtonItem" title="追加" id="e80-hh-pn9">
                             <connections>
-                                <segue destination="VVt-bR-Gu3" kind="push" id="8LA-29-Zhw"/>
+                                <segue destination="VVt-bR-Gu3" kind="presentation" id="VTK-b1-fJq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

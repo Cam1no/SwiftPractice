@@ -28,6 +28,9 @@ class ListTableViewController: UITableViewController {
         let requestURL = URL(string: "https://google.com")
         let req = NSURLRequest(url: requestURL!)
         webview.loadRequest(req as URLRequest)
+        
+        // webviewを表示する
+        self.view.addSubview(webview)
 
     }
 

@@ -15,10 +15,19 @@ class ListTableViewController: UITableViewController {
     var label1:UILabel = UILabel()
     var label2:UILabel = UILabel()
     
-    
+    var webview:UIWebView = UIWebView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //webviewのサイズを決定する
+        webview.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        
+        
+        // urlの読み込み
+        let requestURL = URL(string: "https://google.com")
+        let req = NSURLRequest(url: requestURL!)
+        webview.loadRequest(req as URLRequest)
 
     }
 

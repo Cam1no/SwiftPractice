@@ -11,6 +11,13 @@ import UIKit
 class ListTableViewController: UITableViewController {
     
     
+    //webviewの表示されたタイトル
+    var titleArray = [String]()
+    
+    // webciewに表示されたURL
+    var urlArray = [String]()
+    
+    
     
     var label1:UILabel = UILabel()
     var label2:UILabel = UILabel()
@@ -31,8 +38,43 @@ class ListTableViewController: UITableViewController {
         
         // webviewを表示する
         self.view.addSubview(webview)
+        
+        // はじめは非表示にする
+        webview.isHidden = true
 
     }
+    
+    
+    @IBAction func add(_ sender: Any) {
+        
+        //webviewを表示する
+        webview.isHidden = false
+        
+        
+        // title urlでアプリ内に保存されていたらarrayにいれる
+        if UserDefaults.standard.object(forKey: "titleArray") != nil {
+            titleArray = UserDefaults.standard.object(forKey: "titleArray") as! [String]
+        }
+        
+        if UserDefaults.standard.object(forKey: "urlArray") != nil {
+            urlArray = UserDefaults.standard.object(forKey: "urlArray") as! [String]
+        }
+        
+        //webviewに表示されたタイトル, urlを格納する
+        titleArray.append(webview.stringByEvaluatingJavaScript(from: "document.title")!)
+        urlArray.append(webview.stringByEvaluatingJavaScript(from: "document.url")!)
+        
+        
+        // 配列をアプリ内に保存する
+        UserDefaults.standard.set(titleArray, forKey: "titleArray")
+        UserDefaults.standard.set(urlArray, forKey: "urlArray")
+    }
+    
+    
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

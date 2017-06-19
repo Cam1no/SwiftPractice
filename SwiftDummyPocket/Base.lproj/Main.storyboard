@@ -51,14 +51,14 @@
                     <navigationItem key="navigationItem" id="82P-DG-CKH">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="i98-j8-0N0">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gg9-TJ-YhU">
-                                <rect key="frame" x="16" y="-10" width="45" height="45"/>
+                                <rect key="frame" x="16" y="2" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="done"/>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="HPC-N0-WS5">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Skl-aN-ibY">
-                                <rect key="frame" x="295" y="-10" width="45" height="45"/>
+                                <rect key="frame" x="314" y="-1" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="search"/>
                             </button>

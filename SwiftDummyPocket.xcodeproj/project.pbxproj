@@ -12,6 +12,9 @@
 		5B223A991EF81CEF00EE5922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B223A971EF81CEF00EE5922 /* Main.storyboard */; };
 		5B223A9B1EF81CEF00EE5922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B223A9A1EF81CEF00EE5922 /* Assets.xcassets */; };
 		5B223A9E1EF81CEF00EE5922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B223A9C1EF81CEF00EE5922 /* LaunchScreen.storyboard */; };
+		5B223AAE1EF81E9D00EE5922 /* NSString+Sha1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B223AA81EF81E9D00EE5922 /* NSString+Sha1.m */; };
+		5B223AAF1EF81E9D00EE5922 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B223AAA1EF81E9D00EE5922 /* Reachability.m */; };
+		5B223AB01EF81E9D00EE5922 /* RNCachingURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B223AAC1EF81E9D00EE5922 /* RNCachingURLProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,14 @@
 		5B223A9A1EF81CEF00EE5922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B223A9D1EF81CEF00EE5922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B223A9F1EF81CEF00EE5922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B223AA61EF81E9C00EE5922 /* SwiftDummyPocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDummyPocket-Bridging-Header.h"; sourceTree = "<group>"; };
+		5B223AA71EF81E9D00EE5922 /* NSString+Sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sha1.h"; sourceTree = "<group>"; };
+		5B223AA81EF81E9D00EE5922 /* NSString+Sha1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sha1.m"; sourceTree = "<group>"; };
+		5B223AA91EF81E9D00EE5922 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5B223AAA1EF81E9D00EE5922 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5B223AAB1EF81E9D00EE5922 /* RNCachingURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCachingURLProtocol.h; sourceTree = "<group>"; };
+		5B223AAC1EF81E9D00EE5922 /* RNCachingURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCachingURLProtocol.m; sourceTree = "<group>"; };
+		5B223AAD1EF81E9D00EE5922 /* SwiftPocket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftPocket-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 		5B223A921EF81CEF00EE5922 /* SwiftDummyPocket */ = {
 			isa = PBXGroup;
 			children = (
+				5B223AA51EF81E5D00EE5922 /* vendor */,
 				5B223A931EF81CEF00EE5922 /* AppDelegate.swift */,
 				5B223A951EF81CEF00EE5922 /* ViewController.swift */,
 				5B223A971EF81CEF00EE5922 /* Main.storyboard */,
@@ -62,6 +74,21 @@
 				5B223A9F1EF81CEF00EE5922 /* Info.plist */,
 			);
 			path = SwiftDummyPocket;
+			sourceTree = "<group>";
+		};
+		5B223AA51EF81E5D00EE5922 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5B223AA71EF81E9D00EE5922 /* NSString+Sha1.h */,
+				5B223AA81EF81E9D00EE5922 /* NSString+Sha1.m */,
+				5B223AA91EF81E9D00EE5922 /* Reachability.h */,
+				5B223AAA1EF81E9D00EE5922 /* Reachability.m */,
+				5B223AAB1EF81E9D00EE5922 /* RNCachingURLProtocol.h */,
+				5B223AAC1EF81E9D00EE5922 /* RNCachingURLProtocol.m */,
+				5B223AAD1EF81E9D00EE5922 /* SwiftPocket-Bridging-Header.h */,
+				5B223AA61EF81E9C00EE5922 /* SwiftDummyPocket-Bridging-Header.h */,
+			);
+			name = vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +124,7 @@
 					5B223A8F1EF81CEF00EE5922 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = MGHH4PP8LQ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B223A961EF81CEF00EE5922 /* ViewController.swift in Sources */,
+				5B223AAE1EF81E9D00EE5922 /* NSString+Sha1.m in Sources */,
+				5B223AB01EF81E9D00EE5922 /* RNCachingURLProtocol.m in Sources */,
+				5B223AAF1EF81E9D00EE5922 /* Reachability.m in Sources */,
 				5B223A941EF81CEF00EE5922 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +292,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MGHH4PP8LQ;
 				INFOPLIST_FILE = SwiftDummyPocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Yuji.SwiftDummyPocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDummyPocket/SwiftDummyPocket-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MGHH4PP8LQ;
 				INFOPLIST_FILE = SwiftDummyPocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Yuji.SwiftDummyPocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDummyPocket/SwiftDummyPocket-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

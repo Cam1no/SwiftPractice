@@ -67,6 +67,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="toPreView"/>
                             </button>
+                            <connections>
+                                <segue destination="7PB-Em-V43" kind="presentation" id="kLJ-di-v7k"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -84,7 +87,7 @@
         <!--Preview View Controller-->
         <scene sceneID="xkS-dJ-zbj">
             <objects>
-                <viewController id="7PB-Em-V43" customClass="PreviewViewController" customModule="SwiftWunderList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="7PB-Em-V43" customClass="PreviewViewController" customModule="SwiftWunderList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nTC-Xu-1os"/>
                         <viewControllerLayoutGuide type="bottom" id="jNH-WY-I72"/>
@@ -97,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihn-fL-cPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="139"/>
+            <point key="canvasLocation" x="1076" y="886"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5f1-5x-qOZ">

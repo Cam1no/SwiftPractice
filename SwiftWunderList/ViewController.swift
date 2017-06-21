@@ -38,6 +38,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.separatorStyle = .none
         
     }
+    
+    
+    // textFieldのデリゲートメソッド
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        // returnキーが押されるとキーボードを閉じる
+        textField.resignFirstResponder()
+        
+        return true
+    
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

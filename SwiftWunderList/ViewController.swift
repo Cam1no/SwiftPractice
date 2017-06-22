@@ -137,6 +137,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
+    
+    
+    // セルの削除
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            titleArray.remove(at: indexPath.row)
+            UserDefaults.standard.set(titleArray, forKey: "titleArray")
+            
+            table.reloadData()
+            
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+    }
 
 
 }

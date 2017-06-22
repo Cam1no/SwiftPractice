@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NextViewController: UIViewController {
+class NextViewController: UIViewController, UITextViewDelegate {
     
     //選択された時のパラメーターがわってくる変数
     var selectedNumber:Int = 0
@@ -19,16 +19,30 @@ class NextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textField.delegate = self
+        
         textField.text = titleText
 
     
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     
     }
     
+    
+    @IBAction func openMail(_ sender: UIButton) {
+    
+        
+    }
 
     
 

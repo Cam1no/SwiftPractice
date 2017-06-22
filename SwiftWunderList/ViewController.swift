@@ -84,7 +84,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     }
     
-    // cellが選択されたあと
+    // cellが選択されたあと　画面遷移で使うのはこれ！
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         count = Int(indexPath.row)
         performSegue(withIdentifier: "next", sender: nil)

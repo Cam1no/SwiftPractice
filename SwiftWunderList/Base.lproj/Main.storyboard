@@ -128,6 +128,14 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4U-s3-1Pj">
+                                            <rect key="frame" x="137" y="372" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="mail"/>
+                                            <connections>
+                                                <action selector="openMail:" destination="jab-tR-CNm" eventType="touchUpInside" id="eCG-a8-HRk"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <blurEffect style="light"/>
@@ -183,6 +191,7 @@
     </scenes>
     <resources>
         <image name="backImage" width="665" height="1182"/>
+        <image name="mail" width="200" height="200"/>
         <image name="toPreView" width="128" height="128"/>
     </resources>
 </document>

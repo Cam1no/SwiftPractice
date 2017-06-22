@@ -91,11 +91,58 @@
                         <outlet property="backView" destination="P4w-zK-um7" id="H1G-25-x3I"/>
                         <outlet property="table" destination="Icb-xB-JNH" id="7jQ-IA-9cf"/>
                         <outlet property="textField" destination="gUp-b5-JaS" id="lYg-dE-zqo"/>
+                        <segue destination="jab-tR-CNm" kind="push" identifier="next" id="Yso-jA-hjE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="JYm-Sv-wtr">
+            <objects>
+                <viewController id="jab-tR-CNm" customClass="NextViewController" customModule="SwiftWunderList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hp8-Pz-hZk"/>
+                        <viewControllerLayoutGuide type="bottom" id="64q-ly-yxE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8PC-G3-BYe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backImage" translatesAutoresizingMaskIntoConstraints="NO" id="i3e-dm-bKa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLt-kq-xW9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="UYY-k8-M61">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r42-ju-mUx">
+                                            <rect key="frame" x="45" y="26" width="284" height="291"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p9d-T0-RiQ"/>
+                    <connections>
+                        <outlet property="textField" destination="r42-ju-mUx" id="fds-RI-9QT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyS-4I-7bW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797.5999999999999" y="138.98050974512745"/>
         </scene>
         <!--Preview View Controller-->
         <scene sceneID="xkS-dJ-zbj">
@@ -131,7 +178,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gU8-FX-Ewv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="338" y="139"/>
         </scene>
     </scenes>
     <resources>

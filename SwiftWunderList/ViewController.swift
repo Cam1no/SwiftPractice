@@ -23,6 +23,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var label:UILabel = UILabel()
     
+    var count:Int = 0
+    
     
     
     // 初回ロードされた時のみ呼び出される
@@ -81,6 +83,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return true
     
     }
+    
+    // cellが選択されたあと
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        count = Int(indexPath.row)
+        performSegue(withIdentifier: "next", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "next" {
+            let nextViewController:NextViewController = segue.destination as! NextViewController
+            
+            nextViewController.selectedNumber  = count
+            nextViewController.titleText = titleArray[count]
+        }
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

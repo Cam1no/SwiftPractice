@@ -13,6 +13,7 @@
 		5BFE4E291EFACA98004586A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFE4E281EFACA98004586A3 /* Assets.xcassets */; };
 		5BFE4E2C1EFACA98004586A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFE4E2A1EFACA98004586A3 /* LaunchScreen.storyboard */; };
 		5BFE4E341EFACBCA004586A3 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE4E331EFACBCA004586A3 /* PreviewViewController.swift */; };
+		5BFE4E3A1EFB049D004586A3 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE4E391EFB049D004586A3 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5BFE4E2B1EFACA98004586A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BFE4E2D1EFACA98004586A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BFE4E331EFACBCA004586A3 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		5BFE4E391EFB049D004586A3 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5BFE4E2A1EFACA98004586A3 /* LaunchScreen.storyboard */,
 				5BFE4E2D1EFACA98004586A3 /* Info.plist */,
 				5BFE4E331EFACBCA004586A3 /* PreviewViewController.swift */,
+				5BFE4E391EFB049D004586A3 /* NextViewController.swift */,
 			);
 			path = SwiftWunderList;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BFE4E241EFACA98004586A3 /* ViewController.swift in Sources */,
+				5BFE4E3A1EFB049D004586A3 /* NextViewController.swift in Sources */,
 				5BFE4E221EFACA98004586A3 /* AppDelegate.swift in Sources */,
 				5BFE4E341EFACBCA004586A3 /* PreviewViewController.swift in Sources */,
 			);
@@ -306,6 +310,7 @@
 				5BFE4E321EFACA98004586A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

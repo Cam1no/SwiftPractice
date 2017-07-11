@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-GourmetSearch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,15 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>63F5D21E65CA955FE731288EE9019B12</key>
+		<key>0D73CDE843A47E9BAFC2074A51F4DFBB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CDA7D5F7A4EA1C1491DD4385B178208A</key>
+		<key>2AD4C0B567F59972E03E1656B37A62B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF230B835D19C36FD9D89A3941BA3496</key>
 		<dict>
 			<key>primary</key>
 			<true/>

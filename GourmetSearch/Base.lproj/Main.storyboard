@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="a2f-IE-BDp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ShopListItem" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopListItem" rowHeight="100" id="a2f-IE-BDp" customClass="ShopListTableViewCell" customModule="GourmetSearch" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a2f-IE-BDp" id="a1w-Dt-fVI">
@@ -34,7 +34,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HuS-Gw-KIV">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                                    <rect key="frame" x="0.0" y="1" width="99" height="99"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="99" id="Yl1-a2-Ljn"/>
                                                         <constraint firstAttribute="width" constant="99" id="hqk-gw-We1"/>
@@ -90,14 +90,28 @@
                                                 <constraint firstItem="HuS-Gw-KIV" firstAttribute="leading" secondItem="a1w-Dt-fVI" secondAttribute="leading" id="8kY-Bf-kk4"/>
                                                 <constraint firstItem="WoL-fV-Cbf" firstAttribute="leading" secondItem="a1w-Dt-fVI" secondAttribute="leading" constant="107" id="HzW-As-Go6"/>
                                                 <constraint firstAttribute="trailing" secondItem="WoL-fV-Cbf" secondAttribute="trailing" constant="8" id="VlF-AC-73M"/>
-                                                <constraint firstItem="HuS-Gw-KIV" firstAttribute="top" secondItem="a1w-Dt-fVI" secondAttribute="top" id="fn2-15-uIz"/>
+                                                <constraint firstItem="HuS-Gw-KIV" firstAttribute="top" secondItem="a1w-Dt-fVI" secondAttribute="top" constant="1" id="fn2-15-uIz"/>
                                                 <constraint firstItem="o4G-U3-OQe" firstAttribute="leading" secondItem="HuS-Gw-KIV" secondAttribute="trailing" constant="8" id="gnY-is-yQK"/>
                                                 <constraint firstAttribute="bottom" secondItem="WoL-fV-Cbf" secondAttribute="bottom" constant="8" id="jbz-Il-vfc"/>
                                                 <constraint firstItem="o4G-U3-OQe" firstAttribute="top" secondItem="a1w-Dt-fVI" secondAttribute="topMargin" constant="8" id="qFB-Wz-mWc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="coupon" destination="6Cb-0z-K1q" id="4jK-OZ-Sr4"/>
+                                            <outlet property="iconContainer" destination="WoL-fV-Cbf" id="i2y-Qs-hJj"/>
+                                            <outlet property="name" destination="o4G-U3-OQe" id="kdX-sa-aZh"/>
+                                            <outlet property="nameHeight" destination="cwh-iL-cXn" id="a2A-YV-kLP"/>
+                                            <outlet property="photo" destination="HuS-Gw-KIV" id="IkR-Lz-C3c"/>
+                                            <outlet property="station" destination="RFJ-Yd-bUS" id="gf0-sC-pwN"/>
+                                            <outlet property="stationWidth" destination="g5q-eU-SV1" id="Jfa-0p-9UP"/>
+                                            <outlet property="stationX" destination="qYH-qG-agY" id="PPM-Pz-XNM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="a0O-WN-HCV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WY9-cq-GHH"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -108,6 +122,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PTO-Oz-YQL" secondAttribute="bottom" id="wVX-PY-SF2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="PTO-Oz-YQL" id="OSz-QH-XiB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
